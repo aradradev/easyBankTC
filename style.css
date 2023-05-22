@@ -167,7 +167,6 @@ nav ul li {
 
 .image {
   background: url(images/bg-intro-mobile.svg) no-repeat center center /cover;
-  opacity: 0.7;
 }
 
 .date {
@@ -181,13 +180,19 @@ nav ul li {
 .button {
   padding: 0.9rem 1rem;
   font-weight: 700;
-  border: 1px solid var(--Orange-deep);
+  font-size: 1.1rem;
+  border: none;
   background-color: var(--Orange-red);
   border-radius: 15vw;
+  color: var(--Ligth-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button a {
-  color: var(--White);
+.button:hover {
+  background-color: var(--Ligth-grey);
+  color: var(--Orange-deep);
 }
 
 .about {
@@ -204,8 +209,8 @@ nav ul li {
 }
 
 .about-section {
-  text-align: center;
-  font-size: 1.2rem;
+  padding-top: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4;
 }
 
@@ -213,15 +218,15 @@ nav ul li {
   color: var(--Orange-red);
   font-weight: 700;
   font-size: 2rem;
+  text-align: center;
+  margin: 1.2rem auto;
 }
 
 .card {
   padding: 0.5rem;
   margin-bottom: 1rem;
   display: grid;
-  grid-template-columns: 25% 40% 35%;
   align-items: center;
-  justify-content: start;
   background-color: rgba(53, 55, 62, 0.6);
 }
 
@@ -285,7 +290,8 @@ nav ul li {
 
 .partner hr {
   background-color: var(--Orange-deep);
-  width: 20%;
+  width: 10%;
+  color: var(--Orange-deep);
 }
 
 .partner ul li {
@@ -456,7 +462,6 @@ nav ul li {
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
     justify-items: center;
     gap: 0.7rem;
   }
@@ -477,6 +482,10 @@ nav ul li {
     justify-content: center;
   }
 
+  .featured {
+    padding: 5rem;
+  }
+
   .partner ul {
     display: flex;
     flex-wrap: wrap;
@@ -489,6 +498,17 @@ nav ul li {
   .grids {
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem;
+  }
+
+  .grid,
+  .card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .grid:hover,
+  .card {
+    transform: scale(1.1);
   }
 }
 
@@ -510,6 +530,12 @@ nav ul li {
 }
 
 @media screen and (max-width: 450px) {
+  .card {
+    grid-template-rows: 25% 40% 35%;
+    justify-items: center;
+    justify-content: center;
+  }
+
   .row {
     flex-direction: column;
     text-align: center;

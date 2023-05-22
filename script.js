@@ -130,3 +130,32 @@ rows.forEach((row, index) => {
 // Append section to main container
 const main = document.querySelector('main');
 main.appendChild(section);
+
+// change the h1 text in the About section every 5 seconds
+
+document.addEventListener('DOMContentLoaded', () => {
+  const aboutTitle = document.getElementById('about-title');
+
+  const aboutText = ['Discover the benefits of EasyBank and TidCoin', 'Experience a new level of online banking', 'Join EasyBank today and start saving money', 'Next generation digital banking'];
+
+  let index1 = 0;
+
+  let timeoutRef;
+
+  function changeTitle() {
+    aboutTitle.textContent = aboutText[index1];
+    index1 += 1;
+
+    if (index1 === aboutText.length) {
+      index1 = 0;
+    }
+
+    timeoutRef = setTimeout(changeTitle, 5000);
+  }
+
+  timeoutRef = setTimeout(changeTitle, 5000);
+
+  window.addEventListener('unload', () => {
+    clearTimeout(timeoutRef);
+  });
+});

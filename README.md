@@ -3,6 +3,7 @@
 <div align="center">
  
   <h3><b>EasyBank</b></h3>
+  <img src='images/logo.svg' alt='logo' />
 
 </div>
 
@@ -119,6 +120,10 @@ run this command  :
   npm install
 ```
 
+## Screenshot
+[Click me to see the Desktop](images/index.html(Desktop)%20(2).png)
+[Click me to see the mobile](images/index.html(iPhone%20SE)%20(1).png)
+
 
 ### Deployment
 
@@ -178,7 +183,7 @@ If you like this project, please give me a star
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="Cindy">https://www.behance.net/gallery/29845175/CC-Global-Summit-2015</a>
 
 
 I would like to thank Microverse for this exercise and also pass my gratitude to Cindy Shin for designing the template and make it available for use. 
@@ -208,9 +213,3 @@ I would like to thank Microverse for this exercise and also pass my gratitude to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <a name="readme-top"></a>
-
-<div align="center">
- 
-  <h3><b>If you'd like to get in touch with me, you can reach me at [Abdoul](abdoulramanediallo44@gmail.com). I'm always open to discuss new projects or opportunities.</b></h3>
-
-</div>
