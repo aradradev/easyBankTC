@@ -134,15 +134,7 @@ run this command  :
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Communicate technical concepts to non-technical people Loom video
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ## 👥 Authors <a name="authors"></a>
-
-
 
 👤 ** Abdourahmane Diallo **
 
@@ -183,7 +175,7 @@ If you like this project, please give me a star
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🙏 Acknowledgments <a name="Cindy">https://www.behance.net/gallery/29845175/CC-Global-Summit-2015</a>
+## 🙏 Acknowledgments <a name="Cindy">https://www.behance.net/adagio07</a>
 
 
 I would like to thank Microverse for this exercise and also pass my gratitude to Cindy Shin for designing the template and make it available for use. 

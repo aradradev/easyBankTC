@@ -170,7 +170,11 @@ nav ul li {
 }
 
 .date {
-  margin: 0.9rem 0;
+  margin: 0.9rem auto;
+}
+
+.date h2 {
+  font-weight: 300;
 }
 
 .span {
@@ -188,6 +192,8 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.7s;
 }
 
 .button:hover {
@@ -223,10 +229,13 @@ nav ul li {
 }
 
 .card {
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin-bottom: 1rem;
   display: grid;
   align-items: center;
+  grid-template-columns: 25% 45% 35%;
+  justify-items: center;
+  justify-content: center;
   background-color: rgba(53, 55, 62, 0.6);
 }
 
@@ -288,10 +297,12 @@ nav ul li {
   margin-top: 2rem;
 }
 
+hr {
+  border: 1px solid var(--Orange-deep);
+}
+
 .partner hr {
-  background-color: var(--Orange-deep);
-  width: 10%;
-  color: var(--Orange-deep);
+  width: 5%;
 }
 
 .partner ul li {
@@ -312,7 +323,6 @@ nav ul li {
   background-color: var(--White);
   padding: 2rem;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
@@ -324,6 +334,14 @@ nav ul li {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .foods {
@@ -365,6 +383,10 @@ nav ul li {
   opacity: 0.6;
 }
 
+.principal {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   body {
     font-size: 20px;
@@ -402,6 +424,28 @@ nav ul li {
 
   .topbar ul li a {
     color: var(--Ligth-grey);
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .navbar-desc ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-desc ul li a {
+    color: var(--Dark);
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .navbar-desc ul li a:hover {
+    color: var(--Orange-deep);
+  }
+
+  .topbar ul li a:hover {
+    color: var(--Orange-deep);
   }
 
   .navbar {
@@ -417,16 +461,6 @@ nav ul li {
 
   .logo {
     padding-bottom: 0;
-  }
-
-  .navbar-desc ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .navbar-desc ul li a {
-    color: var(--Dark);
   }
 
   .partner ul li {
@@ -445,7 +479,15 @@ nav ul li {
     justify-items: center;
     gap: 2rem;
     padding: 5rem;
+  }
+
+  .principal {
     background: url(images/main_desktop.png) no-repeat center center /cover;
+  }
+
+  .parag {
+    margin: 5rem;
+    padding: 2.5rem;
   }
 
   .image-desk {
@@ -461,9 +503,10 @@ nav ul li {
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     gap: 0.7rem;
+    padding: 1rem;
   }
 
   .card {
@@ -473,6 +516,16 @@ nav ul li {
     align-items: center;
     text-align: center;
     gap: 1rem;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .logo-history {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin-bottom: 3rem;
   }
 
   .rows {
@@ -507,12 +560,13 @@ nav ul li {
   }
 
   .grid:hover,
-  .card {
+  .card:hover {
     transform: scale(1.1);
+    border: 1px solid var(--White);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #show-more-btn {
     display: block;
     margin: 0 auto;
@@ -530,12 +584,6 @@ nav ul li {
 }
 
 @media screen and (max-width: 450px) {
-  .card {
-    grid-template-rows: 25% 40% 35%;
-    justify-items: center;
-    justify-content: center;
-  }
-
   .row {
     flex-direction: column;
     text-align: center;
