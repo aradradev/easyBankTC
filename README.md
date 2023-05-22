@@ -130,7 +130,7 @@ run this command  :
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://aradradev.github.io/first-capstone-project/)
+- [Live Demo Link](https://aradradev.github.io/easyBankTC/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
