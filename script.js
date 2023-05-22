@@ -18,15 +18,15 @@ closeBtn.addEventListener('click', () => {
 const rows = [
   {
     imageSrc: 'images/photo1.jpeg',
-    name: 'Jalloh Abdul',
-    title: 'Software Engineer and Student at Microverse',
-    description: 'Abdourahmane Jalloh is a software developer and CEO of easybank the future revolution',
+    name: 'Abdul Jalloh',
+    title: 'Software Engineer',
+    description: 'Abdourahmane Jalloh is a Software Engineer and CEO at TidCoin, a money numeric company that is leading the future revolution in financial technology.',
   },
   {
-    imageSrc: 'images/speaker_02.svg',
-    name: 'Kilnam Chon',
-    title: 'Kilnam Chon ',
-    description: 'helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
+    imageSrc: 'images/photo3.jpeg',
+    name: 'Victor Yaradouno',
+    title: 'Software Engineer and Professor in English',
+    description: 'Victor is a highly skilled software engineer and professor in English. He recently developed Speak Weezard for Easy Easy CEO at Passport224, an innovative software that simplifies speech for individuals with language difficulties.',
   },
   {
     imageSrc: 'images/speaker_03.svg',
@@ -158,4 +158,23 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('unload', () => {
     clearTimeout(timeoutRef);
   });
+});
+
+// Popup form start here
+
+const popupForm = document.getElementById('popup-form');
+const openButton = document.querySelector('.button');
+const closeButton = document.querySelector('.close-button');
+
+function closePopup() {
+  popupForm.style.display = 'none';
+}
+
+openButton.addEventListener('click', () => {
+  popupForm.style.display = 'block';
+});
+
+closeButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  closePopup();
 });
