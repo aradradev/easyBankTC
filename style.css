@@ -194,6 +194,7 @@ nav ul li {
   justify-content: center;
   cursor: pointer;
   transition: 0.7s;
+  margin: 1rem 0;
 }
 
 .button:hover {
@@ -237,10 +238,12 @@ nav ul li {
   justify-items: center;
   justify-content: center;
   background-color: rgba(53, 55, 62, 0.6);
+  font-size: 0.89rem;
 }
 
 .card h3 {
   color: var(--Orange-deep);
+  font-size: 0.9rem;
 }
 
 .featured {
@@ -387,6 +390,82 @@ hr {
   text-align: center;
 }
 
+/* Popup container */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  outline: none;
+  background-color: var(--Ligth-grey);
+  padding: 0.79rem 1rem;
+  border-radius: 2vw;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  background-color: var(--Ligth-grey);
+  padding: 1rem;
+  border-radius: 2vw;
+}
+
+.btn,
+.close {
+  margin: 1rem 2rem;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 15vw;
+  color: var(--Ligth-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.btn {
+  background-color: green;
+}
+
+.close {
+  background-color: var(--Orange-red);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   body {
     font-size: 20px;
@@ -485,9 +564,10 @@ hr {
     background: url(images/main_desktop.png) no-repeat center center /cover;
   }
 
-  .parag {
+  .parag1 {
     margin: 5rem;
     padding: 2.5rem;
+    box-shadow: 4px 4px 4px 4px var(--Ligth-grey);
   }
 
   .image-desk {

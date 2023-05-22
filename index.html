@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo - 32x32.svg">
   <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a13da07216.js" crossorigin="anonymous"></script>
   
@@ -63,6 +63,30 @@
             <h2>2023-19-5(Fri)</h2>
             <p><span class="span">TidCoin</span> StartUp tech</p>
             <button class="button">Request Invite</button>
+
+            <!-- Popup form -->
+            <div id="popup-form" class="popup">
+              <div class="popup-content">
+                <h2>Enter your details to request an invite</h2>
+                
+                <form id="input-field" class="form" action="https://formspree.io/f/mqkooagn" method="post">
+                  <label for="name"></label>
+                  <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+                  
+                  <label for="email"></label>
+                  <input type="text" id="email" name="email" placeholder="Enter email" required><br>
+                  
+                  <label for="message"></label>
+                  <textarea name="message" id="msg" cols="30" rows="10" maxlength="30" placeholder="Write something here.." required></textarea><br>
+                  
+                  <div class="buttons">
+                    <button type="submit" class="btn">Send</button>
+                  </div>
+                </form>
+                <button class="close buttons" onclick="closePopup()">Close</button>
+                
+              </div>
+            </div>
           </div>
         </div>
         
