@@ -331,6 +331,7 @@ nav ul li {
 }
 
 .row {
+  text-align: center;
   margin-bottom: 2.5rem;
 }
 
@@ -710,8 +711,10 @@ textarea {
     padding: 0.9rem 1rem;
     width: 100%;
     text-align: center;
+    font-size: 1.1rem;
     font-weight: 700;
-    background-color: var(--Orange-deep);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px var(--Ligth-grey);
     color: var(--Dark);
   }
 
