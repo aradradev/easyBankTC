@@ -1,17 +1,26 @@
 // My hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navBar = document.querySelector('.navbar');
-const closeBtn = document.getElementById('close-btn');
+const navLinks = document.querySelectorAll('.nav-item');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
+function toggleMenu () {
   navBar.classList.toggle('active');
-  closeBtn.classList.toggle('active');
-});
-closeBtn.addEventListener('click', () => {
   hamburger.classList.toggle('active');
-  navBar.classList.remove('active');
-  closeBtn.classList.remove('active');
+  if (hamburger.classList.contains('active')){
+    hamburger.src = "images/icon-close.svg";
+  } else {
+    hamburger.src = "images/icon-hamburger.svg";
+  }
+}
+
+hamburger.addEventListener('click', toggleMenu)
+
+navLinks.forEach((n) => {
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navBar.classList.remove('active');
+    hamburger.src = "images/icon-hamburger.svg"
+  });
 });
 
 // Create an array of Objects to store information for each row
@@ -57,6 +66,7 @@ const rows = [
 // Select the section with class "featured"
 const section = document.createElement('section');
 section.classList.add('featured');
+section.id = 'featured';
 // Create a head title
 const heading = document.createElement('h2');
 heading.innerText = 'Featured Investors';
@@ -174,7 +184,6 @@ openButton.addEventListener('click', () => {
   popupForm.style.display = 'block';
 });
 
-closeButton.addEventListener('click', (e) => {
-  e.preventDefault();
+closeButton.addEventListener('click', () => {
   closePopup();
 });

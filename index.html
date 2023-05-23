@@ -25,26 +25,26 @@
   <main>
     <header class="nav-links">
       <div class="logo">
-        <img src="images/logo.svg" alt="logo">
+        <img class="img-logo" src="images/logo.svg" alt="logo">
         <img class="bank-logo" id="hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger">
-        <img src="images/icon-close.svg" alt="icon-close" id="close-btn">
+        <!-- <img src="images/icon-close.svg" alt="icon-close" id="close-btn"> -->
       </div>
-      <nav class="navbar mobile">
+      <nav class="navbar ">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#form">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a class="nav-item" href="#">Home</a></li>
+          <li><a class="nav-item" href="about.html">About</a></li>
+          <li><a class="nav-item" href="#form">Contact</a></li>
+          <li><a class="nav-item" href="#about">Blog</a></li>
+          <li><a class="nav-item" href="#featured">Careers</a></li>
         </ul>
       </nav>
       <nav class="navbar-desc hidden">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#form">Contact</a></li>
+          <li><a href="#about">Blog</a></li>
+          <li><a href="#featured">Careers</a></li>
         </ul>
       </nav>
       
@@ -83,7 +83,7 @@
                     <button type="submit" class="btn">Send</button>
                   </div>
                 </form>
-                <button class="close buttons" onclick="closePopup()">Close</button>
+                <button class="close-button close buttons" onclick="closePopup()">Close</button>
                 
               </div>
             </div>
@@ -99,7 +99,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-section">
         <h3>Why choose Easybank?</h3><hr>
       </div>
