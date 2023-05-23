@@ -175,10 +175,10 @@ If you like this project, please give me a star
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🙏 Acknowledgments <a name="Cindy">https://www.behance.net/adagio07</a>
+## 🙏 Acknowledgments <a name="Cindy"></a>
 
 
-I would like to thank Microverse for this exercise and also pass my gratitude to Cindy Shin for designing the template and make it available for use. 
+I would like to thank Microverse for this exercise and also pass my gratitude to Cindy Shin(https://www.behance.net/adagio07) for designing the template and make it available for us. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
