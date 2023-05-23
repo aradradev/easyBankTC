@@ -3,23 +3,23 @@ const hamburger = document.getElementById('hamburger');
 const navBar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.nav-item');
 
-function toggleMenu () {
+function toggleMenu() {
   navBar.classList.toggle('active');
   hamburger.classList.toggle('active');
-  if (hamburger.classList.contains('active')){
-    hamburger.src = "images/icon-close.svg";
+  if (hamburger.classList.contains('active')) {
+    hamburger.src = 'images/icon-close.svg';
   } else {
-    hamburger.src = "images/icon-hamburger.svg";
+    hamburger.src = 'images/icon-hamburger.svg';
   }
 }
 
-hamburger.addEventListener('click', toggleMenu)
+hamburger.addEventListener('click', toggleMenu);
 
 navLinks.forEach((n) => {
   n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navBar.classList.remove('active');
-    hamburger.src = "images/icon-hamburger.svg"
+    hamburger.src = 'images/icon-hamburger.svg';
   });
 });
 
