@@ -117,13 +117,39 @@ nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  font-size: 32px;
+  font-weight: bold;
   padding: 1rem;
   background-image: url(images/Texture.jpg);
   -webkit-background-clip: text;
   color: transparent;
   text-transform: capitalize;
-  animation: colorAnimation 2s linear forwards;
+  animation: colorAnim 2s linear forwards;
   animation-iteration-count: infinite;
+}
+
+@keyframes colorAnim {
+  0% {
+    background-color: transparent;
+  }
+
+  25% {
+    color: #a4a4a4;
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  75% {
+    color: #a4a4a4;
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: var(--Orange-red);
+  }
 }
 
 .navbar.active ul li {
@@ -239,12 +265,11 @@ nav ul li {
 }
 
 .button {
-  padding: 0.9rem 1rem;
+  padding: 0.9rem 2.2rem;
   font-weight: 700;
   font-size: 1.1rem;
   border: none;
   background-color: var(--Orange-red);
-  border-radius: 15vw;
   color: var(--Ligth-grey);
   display: flex;
   align-items: center;
