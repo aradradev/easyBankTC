@@ -444,7 +444,7 @@ hr {
   gap: 1rem;
 }
 
-.grids-web{
+.grids-web {
   display: grid;
   grid-template-rows: 1fr;
   padding: 2rem;
@@ -549,7 +549,7 @@ textarea {
   margin: 0 auto;
 }
 
-.webinar{
+.webinar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -558,7 +558,8 @@ textarea {
   height: 15rem;
   width: 100%;
 }
-.webinar-2{
+
+.webinar-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +569,7 @@ textarea {
   width: 100%;
 }
 
-.container{
+.container {
   display: flex;
   background-color: rgba(254, 78, 56, 0.5);
   justify-content: center;
@@ -755,7 +756,7 @@ textarea {
     padding: 3rem;
   }
 
-  .grids-web{
+  .grids-web {
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem;
   }
