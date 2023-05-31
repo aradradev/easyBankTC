@@ -64,7 +64,6 @@ main {
 
 a {
   text-decoration: none;
-  color: var(--Ligth-grey);
 }
 
 ul li {
@@ -106,6 +105,7 @@ nav ul li {
   position: relative;
   text-shadow: 0 0 0 var(--Orange-deep);
   transition: text-shadow 0.5s;
+  color: var(--White);
 }
 
 .navbar ul li a:hover {
@@ -196,13 +196,14 @@ nav ul li {
 }
 
 .greeting p {
-  font-size: 1.5rem;
+  font-size: 3.2vw;
   font-weight: 300;
 }
 
 .greeting h1 {
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 6.1vw;
+  text-shadow: 2px 1px 1px var(--Dark);
   background-image: url(images/Texture.jpg);
   -webkit-background-clip: text;
   color: transparent;
@@ -248,12 +249,26 @@ nav ul li {
   box-shadow: 4px 4px 4px 4px var(--Ligth-grey);
 }
 
+#contact {
+  background-color: var(--Dark);
+  color: var(--Ligth-grey);
+  /* margin: 1.2rem; */
+  text-shadow: 2px 1px 2px var(--Orange-deep);
+  font-size: 1.2rem;
+  padding: 0.8rem;
+}
+
 .image {
   background: url(images/bg-intro-mobile.svg) no-repeat center center /cover;
 }
 
 .date {
-  margin: 0.9rem auto;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.9rem;
 }
 
 .date h2 {
@@ -265,9 +280,9 @@ nav ul li {
 }
 
 .button {
-  padding: 0.9rem 2.2rem;
+  padding: 0.9rem 6rem;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
   background-color: var(--Orange-red);
   color: var(--Ligth-grey);
@@ -276,7 +291,7 @@ nav ul li {
   justify-content: center;
   cursor: pointer;
   transition: 0.7s;
-  margin: 1rem 0;
+  border-radius: 1vw;
 }
 
 .button:hover {
@@ -675,10 +690,6 @@ textarea {
   }
 
   .heading {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: center;
     gap: 2rem;
     padding: 5rem;
   }
@@ -693,12 +704,12 @@ textarea {
     box-shadow: 4px 4px 4px 4px var(--Ligth-grey);
   }
 
-  .image-desk {
+  /* .image-desk {
     position: absolute;
     right: 0;
     top: 28%;
     background: url(images/bg-intro-desktop.svg) no-repeat center center /cover;
-  }
+  } */
 
   .image-desk img {
     width: 350px;
@@ -720,7 +731,7 @@ textarea {
     text-align: center;
     gap: 1rem;
     padding: 0.8rem;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
 
   .logo-history {
