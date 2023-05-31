@@ -267,7 +267,6 @@ nav ul li {
   margin: 1rem auto;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 0.9rem;
 }
