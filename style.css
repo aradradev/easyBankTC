@@ -250,12 +250,10 @@ nav ul li {
 }
 
 #contact {
-  background-color: var(--Dark);
-  color: var(--Ligth-grey);
-
-  /* margin: 1.2rem; */
+  color: var(--Dark);
   text-shadow: 2px 1px 2px var(--Orange-deep);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   padding: 0.8rem;
 }
 
